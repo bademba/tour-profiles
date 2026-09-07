@@ -1,0 +1,596 @@
+2026-09-07T19:51:39.733+03:00  INFO 47588 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : Starting ProfileServiceApplication using Java 17.0.16 with PID 47588 (/home/ba/IdeaProjects/tour-profiles/target/classes started by ba in /home/ba/IdeaProjects/tour-profiles)
+2026-09-07T19:51:39.737+03:00  INFO 47588 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T19:51:40.420+03:00  INFO 47588 --- [tour-profile-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-07T19:51:40.461+03:00  INFO 47588 --- [tour-profile-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interface.
+2026-09-07T19:51:40.858+03:00  INFO 47588 --- [tour-profile-service] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9195 (http)
+2026-09-07T19:51:40.868+03:00  INFO 47588 --- [tour-profile-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T19:51:40.868+03:00  INFO 47588 --- [tour-profile-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-09-07T19:51:40.902+03:00  INFO 47588 --- [tour-profile-service] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1112 ms
+2026-09-07T19:51:41.087+03:00  INFO 47588 --- [tour-profile-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-07T19:51:45.461+03:00  INFO 47588 --- [tour-profile-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@50f4b83d
+2026-09-07T19:51:45.468+03:00  INFO 47588 --- [tour-profile-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-07T19:51:45.510+03:00  INFO 47588 --- [tour-profile-service] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-07T19:51:45.559+03:00  INFO 47588 --- [tour-profile-service] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-09-07T19:51:45.888+03:00  INFO 47588 --- [tour-profile-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-07T19:51:46.525+03:00  INFO 47588 --- [tour-profile-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://mysql-2517a00f-brianademba-fc6b.h.aivencloud.com:13929/tour_travel]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: tour_travel/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-07T19:51:47.218+03:00  INFO 47588 --- [tour-profile-service] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-07T19:51:47.223+03:00  INFO 47588 --- [tour-profile-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-07T19:51:47.288+03:00  INFO 47588 --- [tour-profile-service] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-07T19:51:47.499+03:00  WARN 47588 --- [tour-profile-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-07T19:51:47.872+03:00  INFO 47588 --- [tour-profile-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-09-07T19:51:47.930+03:00  INFO 47588 --- [tour-profile-service] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9195 (http) with context path '/'
+2026-09-07T19:51:47.938+03:00  INFO 47588 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : Started ProfileServiceApplication in 8.622 seconds (process running for 9.004)
+2026-09-07T19:53:06.141+03:00  INFO 47588 --- [tour-profile-service] [http-nio-9195-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-07T19:53:06.142+03:00  INFO 47588 --- [tour-profile-service] [http-nio-9195-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-07T19:53:06.144+03:00  INFO 47588 --- [tour-profile-service] [http-nio-9195-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-09-07T19:53:08.771+03:00  INFO 47588 --- [tour-profile-service] [http-nio-9195-exec-2] c.k.t.logging.LoggingFilter              : REQUEST::|logId=9a13a064-6766-4c16-875d-0b531697e4d1 |Method=GET |RequestURI=/v2/tour/users/user-profile |User-Agent=PostmanRuntime/7.49.1 |OS=Unknown, More-Info: PostmanRuntime/7.49.1 |RequestBody= |ResponseCode=200 |ResponseBody={"data":[],"message":"User profile found","responseId":"d98648cc-1385-4399-8d8e-67512672b017","status":200,"timestamp":"07-09-2026 19:53:08"} |TimeTaken(ms)=2600 |SourceIP=0:0:0:0:0:0:0:1 |RemotePort=46318 |ServerName=localhost |RemoteHost=0:0:0:0:0:0:0:1
+2026-09-07T19:57:42.734+03:00  INFO 47588 --- [tour-profile-service] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-07T19:57:42.736+03:00  INFO 47588 --- [tour-profile-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-07T19:57:42.740+03:00  INFO 47588 --- [tour-profile-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-07T19:57:42.742+03:00  INFO 47588 --- [tour-profile-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-07T19:57:42.918+03:00  INFO 47588 --- [tour-profile-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-07T19:57:45.704+03:00  INFO 48392 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : Starting ProfileServiceApplication using Java 17.0.16 with PID 48392 (/home/ba/IdeaProjects/tour-profiles/target/classes started by ba in /home/ba/IdeaProjects/tour-profiles)
+2026-09-07T19:57:45.713+03:00  INFO 48392 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T19:57:46.398+03:00  INFO 48392 --- [tour-profile-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-07T19:57:46.438+03:00  INFO 48392 --- [tour-profile-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interface.
+2026-09-07T19:57:46.848+03:00  INFO 48392 --- [tour-profile-service] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9195 (http)
+2026-09-07T19:57:46.858+03:00  INFO 48392 --- [tour-profile-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T19:57:46.858+03:00  INFO 48392 --- [tour-profile-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-09-07T19:57:46.893+03:00  INFO 48392 --- [tour-profile-service] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1140 ms
+2026-09-07T19:57:47.083+03:00  INFO 48392 --- [tour-profile-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-07T19:57:51.146+03:00  INFO 48392 --- [tour-profile-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23648d2d
+2026-09-07T19:57:51.153+03:00  INFO 48392 --- [tour-profile-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-07T19:57:51.186+03:00  INFO 48392 --- [tour-profile-service] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-07T19:57:51.222+03:00  INFO 48392 --- [tour-profile-service] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-09-07T19:57:51.541+03:00  INFO 48392 --- [tour-profile-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-07T19:57:52.201+03:00  INFO 48392 --- [tour-profile-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://mysql-2517a00f-brianademba-fc6b.h.aivencloud.com:13929/tour_travel]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: tour_travel/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-07T19:57:52.320+03:00 ERROR 48392 --- [tour-profile-service] [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Association 'com.kendirita.tour_profile_service.entity.User.profile' is 'mappedBy' a property named 'user' which does not exist in the target entity type 'com.kendirita.tour_profile_service.entity.Profile'
+2026-09-07T19:57:52.320+03:00  WARN 48392 --- [tour-profile-service] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Association 'com.kendirita.tour_profile_service.entity.User.profile' is 'mappedBy' a property named 'user' which does not exist in the target entity type 'com.kendirita.tour_profile_service.entity.Profile'
+2026-09-07T19:57:52.321+03:00  INFO 48392 --- [tour-profile-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-07T19:57:53.082+03:00  INFO 48392 --- [tour-profile-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-07T19:57:53.093+03:00  INFO 48392 --- [tour-profile-service] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-09-07T19:57:53.118+03:00  INFO 48392 --- [tour-profile-service] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-09-07T19:57:53.141+03:00 ERROR 48392 --- [tour-profile-service] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Association 'com.kendirita.tour_profile_service.entity.User.profile' is 'mappedBy' a property named 'user' which does not exist in the target entity type 'com.kendirita.tour_profile_service.entity.Profile'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1817) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977) ~[spring-context-7.0.5.jar:7.0.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-7.0.5.jar:7.0.5]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.0.3.jar:4.0.3]
+	at com.kendirita.tour_profile_service.ProfileServiceApplication.main(ProfileServiceApplication.java:10) ~[classes/:na]
+Caused by: org.hibernate.AnnotationException: Association 'com.kendirita.tour_profile_service.entity.User.profile' is 'mappedBy' a property named 'user' which does not exist in the target entity type 'com.kendirita.tour_profile_service.entity.Profile'
+	at org.hibernate.boot.model.internal.OneToOneSecondPass.targetProperty(OneToOneSecondPass.java:185) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.boot.model.internal.OneToOneSecondPass.bindUnowned(OneToOneSecondPass.java:94) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.boot.model.internal.OneToOneSecondPass.doSecondPass(OneToOneSecondPass.java:77) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1771) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1737) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.coordinateProcessors(MetadataBuildingProcess.java:330) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:199) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1392) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.populateSessionFactoryBuilder(EntityManagerFactoryBuilderImpl.java:1472) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1454) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93) ~[spring-orm-7.0.5.jar:7.0.5]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443) ~[spring-orm-7.0.5.jar:7.0.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436) ~[spring-orm-7.0.5.jar:7.0.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411) ~[spring-orm-7.0.5.jar:7.0.5]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419) ~[spring-orm-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813) ~[spring-beans-7.0.5.jar:7.0.5]
+	... 15 common frames omitted
+
+2026-09-07T20:00:25.055+03:00  INFO 48800 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : Starting ProfileServiceApplication using Java 17.0.16 with PID 48800 (/home/ba/IdeaProjects/tour-profiles/target/classes started by ba in /home/ba/IdeaProjects/tour-profiles)
+2026-09-07T20:00:25.059+03:00  INFO 48800 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T20:00:25.745+03:00  INFO 48800 --- [tour-profile-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-07T20:00:25.784+03:00  INFO 48800 --- [tour-profile-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interface.
+2026-09-07T20:00:26.174+03:00  INFO 48800 --- [tour-profile-service] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9195 (http)
+2026-09-07T20:00:26.184+03:00  INFO 48800 --- [tour-profile-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T20:00:26.184+03:00  INFO 48800 --- [tour-profile-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-09-07T20:00:26.220+03:00  INFO 48800 --- [tour-profile-service] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1106 ms
+2026-09-07T20:00:26.397+03:00  INFO 48800 --- [tour-profile-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-07T20:00:29.430+03:00  INFO 48800 --- [tour-profile-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23648d2d
+2026-09-07T20:00:29.437+03:00  INFO 48800 --- [tour-profile-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-07T20:00:29.479+03:00  INFO 48800 --- [tour-profile-service] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-07T20:00:29.519+03:00  INFO 48800 --- [tour-profile-service] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-09-07T20:00:29.851+03:00  INFO 48800 --- [tour-profile-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-07T20:00:32.393+03:00  INFO 48800 --- [tour-profile-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://mysql-2517a00f-brianademba-fc6b.h.aivencloud.com:13929/tour_travel]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: tour_travel/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-07T20:00:33.059+03:00  INFO 48800 --- [tour-profile-service] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-07T20:00:33.065+03:00  INFO 48800 --- [tour-profile-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-07T20:00:33.123+03:00  INFO 48800 --- [tour-profile-service] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-07T20:00:33.327+03:00  WARN 48800 --- [tour-profile-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-07T20:00:33.668+03:00  INFO 48800 --- [tour-profile-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-09-07T20:00:33.729+03:00  INFO 48800 --- [tour-profile-service] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9195 (http) with context path '/'
+2026-09-07T20:00:33.737+03:00  INFO 48800 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : Started ProfileServiceApplication in 9.167 seconds (process running for 9.496)
+2026-09-07T20:00:44.145+03:00  INFO 48800 --- [tour-profile-service] [http-nio-9195-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-07T20:00:44.146+03:00  INFO 48800 --- [tour-profile-service] [http-nio-9195-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-07T20:00:44.150+03:00  INFO 48800 --- [tour-profile-service] [http-nio-9195-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-09-07T20:00:45.881+03:00  INFO 48800 --- [tour-profile-service] [http-nio-9195-exec-2] c.k.t.logging.LoggingFilter              : REQUEST::|logId=4b6cde3e-ae48-49c1-9484-76283fb5748b |Method=GET |RequestURI=/v2/tour/users/user-profile |User-Agent=PostmanRuntime/7.49.1 |OS=Unknown, More-Info: PostmanRuntime/7.49.1 |RequestBody= |ResponseCode=200 |ResponseBody={"data":[],"message":"User profile found","responseId":"161bd2bd-e6c5-48c3-bbe9-479bbdf5721d","status":200,"timestamp":"07-09-2026 20:00:45"} |TimeTaken(ms)=1679 |SourceIP=0:0:0:0:0:0:0:1 |RemotePort=58982 |ServerName=localhost |RemoteHost=0:0:0:0:0:0:0:1
+2026-09-07T20:00:50.367+03:00  WARN 48800 --- [tour-profile-service] [http-nio-9195-exec-3] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 1364, SQLState: HY000
+2026-09-07T20:00:50.367+03:00  WARN 48800 --- [tour-profile-service] [http-nio-9195-exec-3] org.hibernate.orm.jdbc.error             : Field 'user_id' doesn't have a default value
+2026-09-07T20:00:51.257+03:00 ERROR 48800 --- [tour-profile-service] [http-nio-9195-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Field 'user_id' doesn't have a default value] [insert into profiles (avatar_url,created_at,email,full_name,phone,updated_at,id) values (?,?,?,?,?,?,?)]; SQL [insert into profiles (avatar_url,created_at,email,full_name,phone,updated_at,id) values (?,?,?,?,?,?,?)]; constraint [user_id]] with root cause
+
+java.sql.SQLException: Field 'user_id' doesn't have a default value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1166) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1101) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1448) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1084) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-7.0.2.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:181) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.performNonBatchedMutation(AbstractMutationExecutor.java:145) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:53) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:66) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:180) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:120) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:93) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:108) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:634) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:505) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:381) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.internal.SessionImpl.fireFlush(SessionImpl.java:1489) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:481) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2116) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2038) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:410) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:166) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commitNoRollbackOnly(JdbcResourceLocalTransactionCoordinatorImpl.java:248) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:242) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:89) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:553) ~[spring-orm-7.0.5.jar:7.0.5]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:794) ~[spring-tx-7.0.5.jar:7.0.5]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:757) ~[spring-tx-7.0.5.jar:7.0.5]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:687) ~[spring-tx-7.0.5.jar:7.0.5]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:408) ~[spring-tx-7.0.5.jar:7.0.5]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130) ~[spring-tx-7.0.5.jar:7.0.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719) ~[spring-aop-7.0.5.jar:7.0.5]
+	at com.kendirita.tour_profile_service.service.UserProfileService$$SpringCGLIB$$0.createUserProfile(<generated>) ~[classes/:na]
+	at com.kendirita.tour_profile_service.controller.UserController.createUserProfile(UserController.java:29) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at com.kendirita.tour_profile_service.logging.LoggingFilter.doFilterInternal(LoggingFilter.java:38) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2026-09-07T20:02:02.222+03:00  INFO 48800 --- [tour-profile-service] [http-nio-9195-exec-5] c.k.t.logging.LoggingFilter              : REQUEST::|logId=fd5b8e86-5bf9-4407-ac7c-b28c29227645 |Method=POST |RequestURI=/v2/tour/users/user-profile |User-Agent=PostmanRuntime/7.49.1 |OS=Unknown, More-Info: PostmanRuntime/7.49.1 |RequestBody={"fullName":"Anne Anne","email":"anne@gmail.com","phone":"+254720000000","avatarUrl":"https://imgr.com/avatar1"} |ResponseCode=201 |ResponseBody={"data":{"avatarUrl":"https://imgr.com/avatar1","id":"2609577062","phone":"+254720000000"},"message":"User profile created","responseId":"01baa69e-d3bd-4361-a44c-c0d681d0f089","status":201,"timestamp":"07-09-2026 20:02:02"} |TimeTaken(ms)=1390 |SourceIP=0:0:0:0:0:0:0:1 |RemotePort=44474 |ServerName=localhost |RemoteHost=0:0:0:0:0:0:0:1
+2026-09-07T20:02:10.525+03:00  INFO 48800 --- [tour-profile-service] [http-nio-9195-exec-6] c.k.t.logging.LoggingFilter              : REQUEST::|logId=740bc356-a558-4eb0-b7e2-8d70cf999713 |Method=GET |RequestURI=/v2/tour/users/user-profile |User-Agent=PostmanRuntime/7.49.1 |OS=Unknown, More-Info: PostmanRuntime/7.49.1 |RequestBody= |ResponseCode=200 |ResponseBody={"data":[{"avatarUrl":"https://imgr.com/avatar1","id":"2609577062","phone":"+254720000000"}],"message":"User profile found","responseId":"1460242c-ba88-4252-9b75-4cba6271a7ea","status":200,"timestamp":"07-09-2026 20:02:10"} |TimeTaken(ms)=1954 |SourceIP=0:0:0:0:0:0:0:1 |RemotePort=44474 |ServerName=localhost |RemoteHost=0:0:0:0:0:0:0:1
+2026-09-07T20:03:49.615+03:00  INFO 48800 --- [tour-profile-service] [http-nio-9195-exec-9] c.k.t.logging.LoggingFilter              : REQUEST::|logId=76fce5fd-af7d-4bb0-bc99-30a568c0d629 |Method=GET |RequestURI=/v2/tour/users/user-profile/anne@gmail.com |User-Agent=PostmanRuntime/7.49.1 |OS=Unknown, More-Info: PostmanRuntime/7.49.1 |RequestBody= |ResponseCode=200 |ResponseBody={"data":{"avatarUrl":"https://imgr.com/avatar1","id":"2609577062","phone":"+254720000000"},"message":"User profile  found","responseId":"02053e70-db83-4cd7-9bc2-27c553c86ebf","status":200,"timestamp":"07-09-2026 20:03:49"} |TimeTaken(ms)=366 |SourceIP=0:0:0:0:0:0:0:1 |RemotePort=60522 |ServerName=localhost |RemoteHost=0:0:0:0:0:0:0:1
+2026-09-07T20:05:40.504+03:00  INFO 48800 --- [tour-profile-service] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-07T20:05:40.506+03:00  INFO 48800 --- [tour-profile-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-07T20:05:40.511+03:00  INFO 48800 --- [tour-profile-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-07T20:05:40.513+03:00  INFO 48800 --- [tour-profile-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-07T20:05:40.705+03:00  INFO 48800 --- [tour-profile-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-07T20:05:42.663+03:00  INFO 49644 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : Starting ProfileServiceApplication using Java 17.0.16 with PID 49644 (/home/ba/IdeaProjects/tour-profiles/target/classes started by ba in /home/ba/IdeaProjects/tour-profiles)
+2026-09-07T20:05:42.668+03:00  INFO 49644 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T20:05:43.325+03:00  INFO 49644 --- [tour-profile-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-07T20:05:43.368+03:00  INFO 49644 --- [tour-profile-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interface.
+2026-09-07T20:05:43.752+03:00  INFO 49644 --- [tour-profile-service] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9195 (http)
+2026-09-07T20:05:43.761+03:00  INFO 49644 --- [tour-profile-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T20:05:43.762+03:00  INFO 49644 --- [tour-profile-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-09-07T20:05:43.799+03:00  INFO 49644 --- [tour-profile-service] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1093 ms
+2026-09-07T20:05:43.982+03:00  INFO 49644 --- [tour-profile-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-07T20:05:48.340+03:00  INFO 49644 --- [tour-profile-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23648d2d
+2026-09-07T20:05:48.342+03:00  INFO 49644 --- [tour-profile-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-07T20:05:48.369+03:00  INFO 49644 --- [tour-profile-service] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-07T20:05:48.408+03:00  INFO 49644 --- [tour-profile-service] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-09-07T20:05:48.814+03:00  INFO 49644 --- [tour-profile-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-07T20:05:49.713+03:00  INFO 49644 --- [tour-profile-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://mysql-2517a00f-brianademba-fc6b.h.aivencloud.com:13929/tour_travel]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: tour_travel/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-07T20:05:50.393+03:00  INFO 49644 --- [tour-profile-service] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-07T20:05:50.399+03:00  INFO 49644 --- [tour-profile-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-07T20:05:50.462+03:00  INFO 49644 --- [tour-profile-service] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-07T20:05:50.665+03:00  WARN 49644 --- [tour-profile-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-07T20:05:50.988+03:00  INFO 49644 --- [tour-profile-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-09-07T20:05:51.048+03:00  INFO 49644 --- [tour-profile-service] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9195 (http) with context path '/'
+2026-09-07T20:05:51.056+03:00  INFO 49644 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : Started ProfileServiceApplication in 8.842 seconds (process running for 9.211)
+2026-09-07T20:05:53.104+03:00  INFO 49644 --- [tour-profile-service] [http-nio-9195-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-07T20:05:53.104+03:00  INFO 49644 --- [tour-profile-service] [http-nio-9195-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-07T20:05:53.106+03:00  INFO 49644 --- [tour-profile-service] [http-nio-9195-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-09-07T20:05:54.232+03:00  INFO 49644 --- [tour-profile-service] [http-nio-9195-exec-2] c.k.t.logging.LoggingFilter              : REQUEST::|logId=5497ba80-1fcb-4901-b176-83fdf0b5e06c |Method=GET |RequestURI=/v2/tour/users/user-profile/anne@gmail.com |User-Agent=PostmanRuntime/7.49.1 |OS=Unknown, More-Info: PostmanRuntime/7.49.1 |RequestBody= |ResponseCode=200 |ResponseBody={"data":{"avatarUrl":"https://imgr.com/avatar1","id":"2609577062","phone":"+254720000000"},"message":"User profile  found","responseId":"02edc233-a1f1-4253-9294-93d18486ff53","status":200,"timestamp":"07-09-2026 20:05:54"} |TimeTaken(ms)=1100 |SourceIP=0:0:0:0:0:0:0:1 |RemotePort=33178 |ServerName=localhost |RemoteHost=0:0:0:0:0:0:0:1
+2026-09-07T20:06:06.737+03:00  INFO 49644 --- [tour-profile-service] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-07T20:06:06.739+03:00  INFO 49644 --- [tour-profile-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-07T20:06:06.743+03:00  INFO 49644 --- [tour-profile-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-07T20:06:06.745+03:00  INFO 49644 --- [tour-profile-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-07T20:06:08.204+03:00  INFO 49644 --- [tour-profile-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-07T20:06:10.341+03:00  INFO 49844 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : Starting ProfileServiceApplication using Java 17.0.16 with PID 49844 (/home/ba/IdeaProjects/tour-profiles/target/classes started by ba in /home/ba/IdeaProjects/tour-profiles)
+2026-09-07T20:06:10.345+03:00  INFO 49844 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T20:06:11.099+03:00  INFO 49844 --- [tour-profile-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-07T20:06:11.140+03:00  INFO 49844 --- [tour-profile-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interface.
+2026-09-07T20:06:11.547+03:00  INFO 49844 --- [tour-profile-service] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9195 (http)
+2026-09-07T20:06:11.556+03:00  INFO 49844 --- [tour-profile-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T20:06:11.556+03:00  INFO 49844 --- [tour-profile-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-09-07T20:06:11.591+03:00  INFO 49844 --- [tour-profile-service] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1197 ms
+2026-09-07T20:06:11.783+03:00  INFO 49844 --- [tour-profile-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-07T20:06:14.567+03:00  INFO 49844 --- [tour-profile-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23648d2d
+2026-09-07T20:06:14.570+03:00  INFO 49844 --- [tour-profile-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-07T20:06:14.609+03:00  INFO 49844 --- [tour-profile-service] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-07T20:06:14.648+03:00  INFO 49844 --- [tour-profile-service] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-09-07T20:06:14.999+03:00  INFO 49844 --- [tour-profile-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-07T20:06:15.664+03:00  INFO 49844 --- [tour-profile-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://mysql-2517a00f-brianademba-fc6b.h.aivencloud.com:13929/tour_travel]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: tour_travel/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-07T20:06:16.370+03:00  INFO 49844 --- [tour-profile-service] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-07T20:06:16.376+03:00  INFO 49844 --- [tour-profile-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-07T20:06:16.442+03:00  INFO 49844 --- [tour-profile-service] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-07T20:06:16.677+03:00  WARN 49844 --- [tour-profile-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-07T20:06:17.032+03:00  INFO 49844 --- [tour-profile-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-09-07T20:06:17.090+03:00  INFO 49844 --- [tour-profile-service] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9195 (http) with context path '/'
+2026-09-07T20:06:17.099+03:00  INFO 49844 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : Started ProfileServiceApplication in 7.314 seconds (process running for 7.791)
+2026-09-07T20:07:16.981+03:00  INFO 49844 --- [tour-profile-service] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-07T20:07:16.984+03:00  INFO 49844 --- [tour-profile-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-07T20:07:16.988+03:00  INFO 49844 --- [tour-profile-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-07T20:07:16.990+03:00  INFO 49844 --- [tour-profile-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-07T20:07:17.175+03:00  INFO 49844 --- [tour-profile-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-07T20:07:35.305+03:00  INFO 50164 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : Starting ProfileServiceApplication using Java 17.0.16 with PID 50164 (/home/ba/IdeaProjects/tour-profiles/target/classes started by ba in /home/ba/IdeaProjects/tour-profiles)
+2026-09-07T20:07:35.309+03:00  INFO 50164 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T20:07:36.042+03:00  INFO 50164 --- [tour-profile-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-07T20:07:36.082+03:00  INFO 50164 --- [tour-profile-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interface.
+2026-09-07T20:07:36.484+03:00  INFO 50164 --- [tour-profile-service] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9195 (http)
+2026-09-07T20:07:36.494+03:00  INFO 50164 --- [tour-profile-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T20:07:36.495+03:00  INFO 50164 --- [tour-profile-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-09-07T20:07:36.532+03:00  INFO 50164 --- [tour-profile-service] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1179 ms
+2026-09-07T20:07:36.716+03:00  INFO 50164 --- [tour-profile-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-07T20:07:39.370+03:00  INFO 50164 --- [tour-profile-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ac4915e
+2026-09-07T20:07:39.372+03:00  INFO 50164 --- [tour-profile-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-07T20:07:39.410+03:00  INFO 50164 --- [tour-profile-service] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-07T20:07:39.448+03:00  INFO 50164 --- [tour-profile-service] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-09-07T20:07:39.787+03:00  INFO 50164 --- [tour-profile-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-07T20:07:40.509+03:00  INFO 50164 --- [tour-profile-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://mysql-2517a00f-brianademba-fc6b.h.aivencloud.com:13929/tour_travel]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: tour_travel/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-07T20:07:41.107+03:00  INFO 50164 --- [tour-profile-service] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-07T20:07:41.113+03:00  INFO 50164 --- [tour-profile-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-07T20:07:41.176+03:00  INFO 50164 --- [tour-profile-service] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-07T20:07:41.400+03:00  WARN 50164 --- [tour-profile-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-07T20:07:41.764+03:00  INFO 50164 --- [tour-profile-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-09-07T20:07:41.825+03:00  INFO 50164 --- [tour-profile-service] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9195 (http) with context path '/'
+2026-09-07T20:07:41.833+03:00  INFO 50164 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : Started ProfileServiceApplication in 6.969 seconds (process running for 7.325)
+2026-09-07T20:07:46.792+03:00  INFO 50164 --- [tour-profile-service] [http-nio-9195-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-07T20:07:46.793+03:00  INFO 50164 --- [tour-profile-service] [http-nio-9195-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-07T20:07:46.794+03:00  INFO 50164 --- [tour-profile-service] [http-nio-9195-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-09-07T20:07:47.715+03:00  INFO 50164 --- [tour-profile-service] [http-nio-9195-exec-1] c.k.t.logging.LoggingFilter              : REQUEST::|logId=84dba9a6-42a3-4a7d-8575-83a7c078695c |Method=GET |RequestURI=/v2/tour/users/user-profile/anne@gmail.com |User-Agent=PostmanRuntime/7.49.1 |OS=Unknown, More-Info: PostmanRuntime/7.49.1 |RequestBody= |ResponseCode=200 |ResponseBody={"data":{"avatarUrl":"https://imgr.com/avatar1","id":"2609577062","phone":"+254720000000"},"message":"User profile  found","responseId":"f5e032dc-1f88-4554-a132-9f6a1cbe8ca7","status":200,"timestamp":"07-09-2026 20:07:47"} |TimeTaken(ms)=894 |SourceIP=0:0:0:0:0:0:0:1 |RemotePort=46228 |ServerName=localhost |RemoteHost=0:0:0:0:0:0:0:1
+2026-09-07T20:07:52.194+03:00  INFO 50164 --- [tour-profile-service] [http-nio-9195-exec-3] c.k.t.logging.LoggingFilter              : REQUEST::|logId=713f566e-340e-48cc-9fd4-14cbefc113cb |Method=GET |RequestURI=/v2/tour/users/user-profile |User-Agent=PostmanRuntime/7.49.1 |OS=Unknown, More-Info: PostmanRuntime/7.49.1 |RequestBody= |ResponseCode=200 |ResponseBody={"data":[{"avatarUrl":"https://imgr.com/avatar1","id":"2609577062","phone":"+254720000000"}],"message":"User profile found","responseId":"95238e10-36a7-4148-90a7-132e94635336","status":200,"timestamp":"07-09-2026 20:07:52"} |TimeTaken(ms)=1310 |SourceIP=0:0:0:0:0:0:0:1 |RemotePort=46228 |ServerName=localhost |RemoteHost=0:0:0:0:0:0:0:1
+2026-09-07T20:08:45.145+03:00  INFO 50164 --- [tour-profile-service] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-07T20:08:45.147+03:00  INFO 50164 --- [tour-profile-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-07T20:08:45.151+03:00  INFO 50164 --- [tour-profile-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-07T20:08:45.152+03:00  INFO 50164 --- [tour-profile-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-07T20:08:45.381+03:00  INFO 50164 --- [tour-profile-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-07T20:09:03.346+03:00  INFO 50461 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : Starting ProfileServiceApplication using Java 17.0.16 with PID 50461 (/home/ba/IdeaProjects/tour-profiles/target/classes started by ba in /home/ba/IdeaProjects/tour-profiles)
+2026-09-07T20:09:03.357+03:00  INFO 50461 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T20:09:04.048+03:00  INFO 50461 --- [tour-profile-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-07T20:09:04.087+03:00  INFO 50461 --- [tour-profile-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interface.
+2026-09-07T20:09:04.477+03:00  INFO 50461 --- [tour-profile-service] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9195 (http)
+2026-09-07T20:09:04.487+03:00  INFO 50461 --- [tour-profile-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T20:09:04.487+03:00  INFO 50461 --- [tour-profile-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-09-07T20:09:04.519+03:00  INFO 50461 --- [tour-profile-service] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1102 ms
+2026-09-07T20:09:04.697+03:00  INFO 50461 --- [tour-profile-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-07T20:09:07.297+03:00  INFO 50461 --- [tour-profile-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ac4915e
+2026-09-07T20:09:07.298+03:00  INFO 50461 --- [tour-profile-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-07T20:09:07.319+03:00  INFO 50461 --- [tour-profile-service] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-07T20:09:07.359+03:00  INFO 50461 --- [tour-profile-service] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-09-07T20:09:07.697+03:00  INFO 50461 --- [tour-profile-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-07T20:09:08.549+03:00  INFO 50461 --- [tour-profile-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://mysql-2517a00f-brianademba-fc6b.h.aivencloud.com:13929/tour_travel]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: tour_travel/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-07T20:09:09.166+03:00  INFO 50461 --- [tour-profile-service] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-07T20:09:09.172+03:00  INFO 50461 --- [tour-profile-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-07T20:09:09.232+03:00  INFO 50461 --- [tour-profile-service] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-07T20:09:09.436+03:00  WARN 50461 --- [tour-profile-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-07T20:09:09.763+03:00  INFO 50461 --- [tour-profile-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-09-07T20:09:09.823+03:00  INFO 50461 --- [tour-profile-service] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9195 (http) with context path '/'
+2026-09-07T20:09:09.831+03:00  INFO 50461 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : Started ProfileServiceApplication in 6.886 seconds (process running for 7.24)
+2026-09-07T20:09:13.923+03:00  INFO 50461 --- [tour-profile-service] [http-nio-9195-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-07T20:09:13.923+03:00  INFO 50461 --- [tour-profile-service] [http-nio-9195-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-07T20:09:13.925+03:00  INFO 50461 --- [tour-profile-service] [http-nio-9195-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-09-07T20:09:15.705+03:00  INFO 50461 --- [tour-profile-service] [http-nio-9195-exec-1] c.k.t.logging.LoggingFilter              : REQUEST::|logId=6cc34ff8-1cbe-4f3d-a978-eecf88725130 |Method=GET |RequestURI=/v2/tour/users/user-profile |User-Agent=PostmanRuntime/7.49.1 |OS=Unknown, More-Info: PostmanRuntime/7.49.1 |RequestBody= |ResponseCode=200 |ResponseBody={"data":[{"avatarUrl":"https://imgr.com/avatar1","id":"2609577062","phone":"+254720000000"}],"message":"User profile found","responseId":"03d1189a-82f6-4fd7-b168-b16d362beedb","status":200,"timestamp":"07-09-2026 20:09:15"} |TimeTaken(ms)=1755 |SourceIP=0:0:0:0:0:0:0:1 |RemotePort=43998 |ServerName=localhost |RemoteHost=0:0:0:0:0:0:0:1
+2026-09-07T20:09:18.932+03:00  INFO 50461 --- [tour-profile-service] [http-nio-9195-exec-3] c.k.t.logging.LoggingFilter              : REQUEST::|logId=e3b4bddc-94c2-4eae-b52e-1000d54958f0 |Method=GET |RequestURI=/v2/tour/users/user-profile |User-Agent=PostmanRuntime/7.49.1 |OS=Unknown, More-Info: PostmanRuntime/7.49.1 |RequestBody= |ResponseCode=200 |ResponseBody={"data":[{"avatarUrl":"https://imgr.com/avatar1","id":"2609577062","phone":"+254720000000"}],"message":"User profile found","responseId":"2ed761c5-5fd5-4972-8fdf-8a76ced87f11","status":200,"timestamp":"07-09-2026 20:09:18"} |TimeTaken(ms)=1187 |SourceIP=0:0:0:0:0:0:0:1 |RemotePort=43998 |ServerName=localhost |RemoteHost=0:0:0:0:0:0:0:1
+2026-09-07T20:09:21.508+03:00  INFO 50461 --- [tour-profile-service] [http-nio-9195-exec-4] c.k.t.logging.LoggingFilter              : REQUEST::|logId=f9c7433d-42a0-48d8-9ccc-827d8a3281e8 |Method=GET |RequestURI=/v2/tour/users/user-profile/anne@gmail.com |User-Agent=PostmanRuntime/7.49.1 |OS=Unknown, More-Info: PostmanRuntime/7.49.1 |RequestBody= |ResponseCode=200 |ResponseBody={"data":{"avatarUrl":"https://imgr.com/avatar1","id":"2609577062","phone":"+254720000000"},"message":"User profile  found","responseId":"57813892-eb72-4dd0-8347-5ae01f33a9aa","status":200,"timestamp":"07-09-2026 20:09:21"} |TimeTaken(ms)=762 |SourceIP=0:0:0:0:0:0:0:1 |RemotePort=43998 |ServerName=localhost |RemoteHost=0:0:0:0:0:0:0:1
+2026-09-07T20:10:23.087+03:00  INFO 50461 --- [tour-profile-service] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-07T20:10:23.089+03:00  INFO 50461 --- [tour-profile-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-07T20:10:23.093+03:00  INFO 50461 --- [tour-profile-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-07T20:10:23.094+03:00  INFO 50461 --- [tour-profile-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-07T20:10:23.273+03:00  INFO 50461 --- [tour-profile-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-07T20:10:26.211+03:00  INFO 50813 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : Starting ProfileServiceApplication using Java 17.0.16 with PID 50813 (/home/ba/IdeaProjects/tour-profiles/target/classes started by ba in /home/ba/IdeaProjects/tour-profiles)
+2026-09-07T20:10:26.223+03:00  INFO 50813 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T20:10:26.906+03:00  INFO 50813 --- [tour-profile-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-07T20:10:26.949+03:00  INFO 50813 --- [tour-profile-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interface.
+2026-09-07T20:10:27.369+03:00  INFO 50813 --- [tour-profile-service] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9195 (http)
+2026-09-07T20:10:27.379+03:00  INFO 50813 --- [tour-profile-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T20:10:27.380+03:00  INFO 50813 --- [tour-profile-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-09-07T20:10:27.419+03:00  INFO 50813 --- [tour-profile-service] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1152 ms
+2026-09-07T20:10:27.655+03:00  INFO 50813 --- [tour-profile-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-07T20:10:35.293+03:00  INFO 50813 --- [tour-profile-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ac4915e
+2026-09-07T20:10:35.295+03:00  INFO 50813 --- [tour-profile-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-07T20:10:35.329+03:00  INFO 50813 --- [tour-profile-service] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-07T20:10:35.389+03:00  INFO 50813 --- [tour-profile-service] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-09-07T20:10:35.974+03:00  INFO 50813 --- [tour-profile-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-07T20:10:36.917+03:00  INFO 50813 --- [tour-profile-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://mysql-2517a00f-brianademba-fc6b.h.aivencloud.com:13929/tour_travel]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: tour_travel/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-07T20:10:37.564+03:00  INFO 50813 --- [tour-profile-service] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-07T20:10:37.570+03:00  INFO 50813 --- [tour-profile-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-07T20:10:37.630+03:00  INFO 50813 --- [tour-profile-service] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-07T20:10:37.848+03:00  WARN 50813 --- [tour-profile-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-07T20:10:38.173+03:00  INFO 50813 --- [tour-profile-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-09-07T20:10:38.240+03:00  INFO 50813 --- [tour-profile-service] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9195 (http) with context path '/'
+2026-09-07T20:10:38.248+03:00  INFO 50813 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : Started ProfileServiceApplication in 12.497 seconds (process running for 12.908)
+2026-09-07T20:11:02.898+03:00  INFO 50813 --- [tour-profile-service] [http-nio-9195-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-07T20:11:02.898+03:00  INFO 50813 --- [tour-profile-service] [http-nio-9195-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-07T20:11:02.899+03:00  INFO 50813 --- [tour-profile-service] [http-nio-9195-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-09-07T20:11:02.927+03:00  WARN 50813 --- [tour-profile-service] [http-nio-9195-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2026-09-07T20:11:02.930+03:00  INFO 50813 --- [tour-profile-service] [http-nio-9195-exec-1] c.k.t.logging.LoggingFilter              : REQUEST::|logId=b00f0540-2f0a-425b-9a84-f0391d464d88 |Method=POST |RequestURI=/v2/tour/users/user-profile/anne@gmail.com |User-Agent=PostmanRuntime/7.49.1 |OS=Unknown, More-Info: PostmanRuntime/7.49.1 |RequestBody= |ResponseCode=405 |ResponseBody= |TimeTaken(ms)=13 |SourceIP=0:0:0:0:0:0:0:1 |RemotePort=53108 |ServerName=localhost |RemoteHost=0:0:0:0:0:0:0:1
+2026-09-07T20:11:10.234+03:00  INFO 50813 --- [tour-profile-service] [http-nio-9195-exec-3] c.k.t.logging.LoggingFilter              : REQUEST::|logId=7f005b46-8aad-4b52-b609-b5635464871c |Method=PUT |RequestURI=/v2/tour/users/user-profile/anne@gmail.com |User-Agent=PostmanRuntime/7.49.1 |OS=Unknown, More-Info: PostmanRuntime/7.49.1 |RequestBody={"fullName":"Anne Anne","email":"anne@gmail.com","phone":"+254720000001","avatarUrl":"https://imgr.com/avatar1"} |ResponseCode=200 |ResponseBody={"data":{"avatarUrl":"https://imgr.com/avatar1","id":"2609577062","phone":"+254720000000"},"message":"User profile updated","responseId":"31bb7eb9-89be-43cd-b23c-06551899cffc","status":200,"timestamp":"07-09-2026 20:11:10"} |TimeTaken(ms)=1396 |SourceIP=0:0:0:0:0:0:0:1 |RemotePort=53108 |ServerName=localhost |RemoteHost=0:0:0:0:0:0:0:1
+2026-09-07T20:11:15.255+03:00  INFO 50813 --- [tour-profile-service] [http-nio-9195-exec-4] c.k.t.logging.LoggingFilter              : REQUEST::|logId=b6caae3e-9e19-46c0-9cf0-427c5b036383 |Method=GET |RequestURI=/v2/tour/users/user-profile/anne@gmail.com |User-Agent=PostmanRuntime/7.49.1 |OS=Unknown, More-Info: PostmanRuntime/7.49.1 |RequestBody= |ResponseCode=200 |ResponseBody={"data":{"avatarUrl":"https://imgr.com/avatar1","id":"2609577062","phone":"+254720000000"},"message":"User profile  found","responseId":"87cfa780-e117-4b29-ae52-23c44560c96d","status":200,"timestamp":"07-09-2026 20:11:15"} |TimeTaken(ms)=344 |SourceIP=0:0:0:0:0:0:0:1 |RemotePort=53108 |ServerName=localhost |RemoteHost=0:0:0:0:0:0:0:1
+2026-09-07T20:12:04.787+03:00  INFO 50813 --- [tour-profile-service] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-07T20:12:04.789+03:00  INFO 50813 --- [tour-profile-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-07T20:12:04.793+03:00  INFO 50813 --- [tour-profile-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-07T20:12:04.795+03:00  INFO 50813 --- [tour-profile-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-07T20:12:04.970+03:00  INFO 50813 --- [tour-profile-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-07T20:12:07.824+03:00  INFO 51126 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : Starting ProfileServiceApplication using Java 17.0.16 with PID 51126 (/home/ba/IdeaProjects/tour-profiles/target/classes started by ba in /home/ba/IdeaProjects/tour-profiles)
+2026-09-07T20:12:07.827+03:00  INFO 51126 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T20:12:08.563+03:00  INFO 51126 --- [tour-profile-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-07T20:12:08.618+03:00  INFO 51126 --- [tour-profile-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interface.
+2026-09-07T20:12:09.031+03:00  INFO 51126 --- [tour-profile-service] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9195 (http)
+2026-09-07T20:12:09.042+03:00  INFO 51126 --- [tour-profile-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T20:12:09.042+03:00  INFO 51126 --- [tour-profile-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-09-07T20:12:09.076+03:00  INFO 51126 --- [tour-profile-service] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1207 ms
+2026-09-07T20:12:09.263+03:00  INFO 51126 --- [tour-profile-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-07T20:12:12.109+03:00  INFO 51126 --- [tour-profile-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@30159886
+2026-09-07T20:12:12.115+03:00  INFO 51126 --- [tour-profile-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-07T20:12:12.159+03:00  INFO 51126 --- [tour-profile-service] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-07T20:12:12.195+03:00  INFO 51126 --- [tour-profile-service] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-09-07T20:12:12.504+03:00  INFO 51126 --- [tour-profile-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-07T20:12:13.165+03:00  INFO 51126 --- [tour-profile-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://mysql-2517a00f-brianademba-fc6b.h.aivencloud.com:13929/tour_travel]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: tour_travel/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-07T20:12:14.040+03:00  INFO 51126 --- [tour-profile-service] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-07T20:12:14.046+03:00  INFO 51126 --- [tour-profile-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-07T20:12:14.111+03:00  INFO 51126 --- [tour-profile-service] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-07T20:12:14.333+03:00  WARN 51126 --- [tour-profile-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-07T20:12:14.676+03:00  INFO 51126 --- [tour-profile-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-09-07T20:12:14.735+03:00  INFO 51126 --- [tour-profile-service] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9195 (http) with context path '/'
+2026-09-07T20:12:14.743+03:00  INFO 51126 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : Started ProfileServiceApplication in 7.375 seconds (process running for 7.743)
+2026-09-07T20:12:45.845+03:00  INFO 51126 --- [tour-profile-service] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-07T20:12:45.848+03:00  INFO 51126 --- [tour-profile-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-07T20:12:45.852+03:00  INFO 51126 --- [tour-profile-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-07T20:12:45.854+03:00  INFO 51126 --- [tour-profile-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-07T20:12:46.035+03:00  INFO 51126 --- [tour-profile-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-07T20:12:49.112+03:00  INFO 51310 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : Starting ProfileServiceApplication using Java 17.0.16 with PID 51310 (/home/ba/IdeaProjects/tour-profiles/target/classes started by ba in /home/ba/IdeaProjects/tour-profiles)
+2026-09-07T20:12:49.120+03:00  INFO 51310 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T20:12:49.811+03:00  INFO 51310 --- [tour-profile-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-07T20:12:49.853+03:00  INFO 51310 --- [tour-profile-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 1 JPA repository interface.
+2026-09-07T20:12:50.265+03:00  INFO 51310 --- [tour-profile-service] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9195 (http)
+2026-09-07T20:12:50.275+03:00  INFO 51310 --- [tour-profile-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T20:12:50.275+03:00  INFO 51310 --- [tour-profile-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-09-07T20:12:50.310+03:00  INFO 51310 --- [tour-profile-service] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1144 ms
+2026-09-07T20:12:50.505+03:00  INFO 51310 --- [tour-profile-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-07T20:12:53.884+03:00  INFO 51310 --- [tour-profile-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ac4915e
+2026-09-07T20:12:53.889+03:00  INFO 51310 --- [tour-profile-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-07T20:12:53.913+03:00  INFO 51310 --- [tour-profile-service] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-07T20:12:53.948+03:00  INFO 51310 --- [tour-profile-service] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-09-07T20:12:54.262+03:00  INFO 51310 --- [tour-profile-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-07T20:12:55.344+03:00  INFO 51310 --- [tour-profile-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://mysql-2517a00f-brianademba-fc6b.h.aivencloud.com:13929/tour_travel]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: tour_travel/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-07T20:12:55.986+03:00  INFO 51310 --- [tour-profile-service] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-07T20:12:55.992+03:00  INFO 51310 --- [tour-profile-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-07T20:12:56.058+03:00  INFO 51310 --- [tour-profile-service] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-07T20:12:56.273+03:00  WARN 51310 --- [tour-profile-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-07T20:12:56.616+03:00  INFO 51310 --- [tour-profile-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-09-07T20:12:56.682+03:00  INFO 51310 --- [tour-profile-service] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9195 (http) with context path '/'
+2026-09-07T20:12:56.690+03:00  INFO 51310 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : Started ProfileServiceApplication in 8.007 seconds (process running for 8.41)
+2026-09-07T20:13:01.015+03:00  INFO 51310 --- [tour-profile-service] [http-nio-9195-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-07T20:13:01.015+03:00  INFO 51310 --- [tour-profile-service] [http-nio-9195-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-07T20:13:01.017+03:00  INFO 51310 --- [tour-profile-service] [http-nio-9195-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-09-07T20:13:03.252+03:00  INFO 51310 --- [tour-profile-service] [http-nio-9195-exec-2] c.k.t.logging.LoggingFilter              : REQUEST::|logId=e0ee8d6e-006c-4174-a20b-2857a130bd8a |Method=PUT |RequestURI=/v2/tour/users/user-profile/anne@gmail.com |User-Agent=PostmanRuntime/7.49.1 |OS=Unknown, More-Info: PostmanRuntime/7.49.1 |RequestBody={"fullName":"Anne Anne","email":"anne@gmail.com","phone":"+254720000001","avatarUrl":"https://imgr.com/avatar1"} |ResponseCode=200 |ResponseBody={"data":{"avatarUrl":"https://imgr.com/avatar1","id":"2609577062","phone":"+254720000000"},"message":"User profile updated","responseId":"d26e7027-9cf8-4e58-bec7-6095f758e140","status":200,"timestamp":"07-09-2026 20:13:03"} |TimeTaken(ms)=2211 |SourceIP=0:0:0:0:0:0:0:1 |RemotePort=35204 |ServerName=localhost |RemoteHost=0:0:0:0:0:0:0:1
+2026-09-07T20:13:08.384+03:00  INFO 51310 --- [tour-profile-service] [http-nio-9195-exec-3] c.k.t.logging.LoggingFilter              : REQUEST::|logId=47329dcb-cc13-49fd-87b4-77c02adc11a1 |Method=GET |RequestURI=/v2/tour/users/user-profile/anne@gmail.com |User-Agent=PostmanRuntime/7.49.1 |OS=Unknown, More-Info: PostmanRuntime/7.49.1 |RequestBody= |ResponseCode=200 |ResponseBody={"data":{"avatarUrl":"https://imgr.com/avatar1","id":"2609577062","phone":"+254720000000"},"message":"User profile  found","responseId":"dbe52906-5890-4be0-8af9-9238a2d82bda","status":200,"timestamp":"07-09-2026 20:13:08"} |TimeTaken(ms)=422 |SourceIP=0:0:0:0:0:0:0:1 |RemotePort=35204 |ServerName=localhost |RemoteHost=0:0:0:0:0:0:0:1
+2026-09-07T20:14:37.852+03:00  INFO 51310 --- [tour-profile-service] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-07T20:14:37.854+03:00  INFO 51310 --- [tour-profile-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-07T20:14:37.857+03:00  INFO 51310 --- [tour-profile-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-07T20:14:37.859+03:00  INFO 51310 --- [tour-profile-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-07T20:14:38.104+03:00  INFO 51310 --- [tour-profile-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-07T20:14:40.717+03:00  INFO 51600 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : Starting ProfileServiceApplication using Java 17.0.16 with PID 51600 (/home/ba/IdeaProjects/tour-profiles/target/classes started by ba in /home/ba/IdeaProjects/tour-profiles)
+2026-09-07T20:14:40.721+03:00  INFO 51600 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T20:14:41.385+03:00  INFO 51600 --- [tour-profile-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-07T20:14:41.424+03:00  INFO 51600 --- [tour-profile-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interface.
+2026-09-07T20:14:41.817+03:00  INFO 51600 --- [tour-profile-service] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9195 (http)
+2026-09-07T20:14:41.826+03:00  INFO 51600 --- [tour-profile-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T20:14:41.827+03:00  INFO 51600 --- [tour-profile-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-09-07T20:14:41.862+03:00  INFO 51600 --- [tour-profile-service] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1093 ms
+2026-09-07T20:14:42.042+03:00  INFO 51600 --- [tour-profile-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-07T20:14:44.305+03:00  INFO 51600 --- [tour-profile-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ac4915e
+2026-09-07T20:14:44.311+03:00  INFO 51600 --- [tour-profile-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-07T20:14:44.354+03:00  INFO 51600 --- [tour-profile-service] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-07T20:14:44.392+03:00  INFO 51600 --- [tour-profile-service] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-09-07T20:14:44.716+03:00  INFO 51600 --- [tour-profile-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-07T20:14:45.863+03:00  INFO 51600 --- [tour-profile-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://mysql-2517a00f-brianademba-fc6b.h.aivencloud.com:13929/tour_travel]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: tour_travel/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-07T20:14:46.507+03:00  INFO 51600 --- [tour-profile-service] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-07T20:14:46.515+03:00  INFO 51600 --- [tour-profile-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-07T20:14:46.582+03:00  INFO 51600 --- [tour-profile-service] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-07T20:14:46.793+03:00  WARN 51600 --- [tour-profile-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-07T20:14:47.120+03:00  INFO 51600 --- [tour-profile-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-09-07T20:14:47.176+03:00  INFO 51600 --- [tour-profile-service] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9195 (http) with context path '/'
+2026-09-07T20:14:47.184+03:00  INFO 51600 --- [tour-profile-service] [main] c.k.t.ProfileServiceApplication          : Started ProfileServiceApplication in 6.91 seconds (process running for 7.27)
+2026-09-07T20:14:51.736+03:00  INFO 51600 --- [tour-profile-service] [http-nio-9195-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-07T20:14:51.737+03:00  INFO 51600 --- [tour-profile-service] [http-nio-9195-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-07T20:14:51.739+03:00  INFO 51600 --- [tour-profile-service] [http-nio-9195-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-09-07T20:14:52.631+03:00  INFO 51600 --- [tour-profile-service] [http-nio-9195-exec-1] c.k.t.logging.LoggingFilter              : REQUEST::|logId=cc06111f-86bf-4a22-8172-1adadd028f09 |Method=GET |RequestURI=/v2/tour/users/user-profile/anne@gmail.com |User-Agent=PostmanRuntime/7.49.1 |OS=Unknown, More-Info: PostmanRuntime/7.49.1 |RequestBody= |ResponseCode=200 |ResponseBody={"data":{"avatarUrl":"https://imgr.com/avatar1","id":"2609577062","phone":"+254720000000"},"message":"User profile  found","responseId":"28b75717-306e-486f-88fb-bb8934718a15","status":200,"timestamp":"07-09-2026 20:14:52"} |TimeTaken(ms)=868 |SourceIP=0:0:0:0:0:0:0:1 |RemotePort=58562 |ServerName=localhost |RemoteHost=0:0:0:0:0:0:0:1
+2026-09-07T20:14:59.844+03:00  INFO 51600 --- [tour-profile-service] [http-nio-9195-exec-3] c.k.t.logging.LoggingFilter              : REQUEST::|logId=7bdd63a8-e482-4733-9fb2-255957f20d18 |Method=PUT |RequestURI=/v2/tour/users/user-profile/anne@gmail.com |User-Agent=PostmanRuntime/7.49.1 |OS=Unknown, More-Info: PostmanRuntime/7.49.1 |RequestBody={"fullName":"Anne Anne","email":"anne@gmail.com","phone":"+254720000001","avatarUrl":"https://imgr.com/avatar1"} |ResponseCode=200 |ResponseBody={"data":{"avatarUrl":"https://imgr.com/avatar1","id":"2609577062","phone":"+254720000001"},"message":"User profile updated","responseId":"57bbed57-10f2-4a99-99d1-f9d327f2e2ab","status":200,"timestamp":"07-09-2026 20:14:59"} |TimeTaken(ms)=2152 |SourceIP=0:0:0:0:0:0:0:1 |RemotePort=58562 |ServerName=localhost |RemoteHost=0:0:0:0:0:0:0:1
+2026-09-07T20:15:04.068+03:00  INFO 51600 --- [tour-profile-service] [http-nio-9195-exec-4] c.k.t.logging.LoggingFilter              : REQUEST::|logId=53456431-c15f-4fe7-90c0-90e63d704098 |Method=GET |RequestURI=/v2/tour/users/user-profile/anne@gmail.com |User-Agent=PostmanRuntime/7.49.1 |OS=Unknown, More-Info: PostmanRuntime/7.49.1 |RequestBody= |ResponseCode=200 |ResponseBody={"data":{"avatarUrl":"https://imgr.com/avatar1","id":"2609577062","phone":"+254720000001"},"message":"User profile  found","responseId":"8d4fc84d-d8a6-4f6b-a3f3-be0f399633af","status":200,"timestamp":"07-09-2026 20:15:04"} |TimeTaken(ms)=648 |SourceIP=0:0:0:0:0:0:0:1 |RemotePort=58562 |ServerName=localhost |RemoteHost=0:0:0:0:0:0:0:1
+2026-09-07T20:15:42.068+03:00  INFO 51600 --- [tour-profile-service] [http-nio-9195-exec-5] c.k.t.logging.LoggingFilter              : REQUEST::|logId=ca7af614-ec24-4029-b75c-e4dcee8cc7ab |Method=POST |RequestURI=/v2/tour/users/user-profile |User-Agent=PostmanRuntime/7.49.1 |OS=Unknown, More-Info: PostmanRuntime/7.49.1 |RequestBody={"fullName":"Jaime Lanister","email":"jlanister@gmail.com","phone":"+254720000010","avatarUrl":"https://imgr.com/jlanister"} |ResponseCode=201 |ResponseBody={"data":{"avatarUrl":"https://imgr.com/jlanister","id":"2609465955","phone":"+254720000010"},"message":"User profile created","responseId":"132aa71f-f28f-4115-a49b-99a6c401990a","status":201,"timestamp":"07-09-2026 20:15:42"} |TimeTaken(ms)=1196 |SourceIP=0:0:0:0:0:0:0:1 |RemotePort=58562 |ServerName=localhost |RemoteHost=0:0:0:0:0:0:0:1
+2026-09-07T20:15:48.963+03:00  INFO 51600 --- [tour-profile-service] [http-nio-9195-exec-6] c.k.t.logging.LoggingFilter              : REQUEST::|logId=5091602a-beba-4275-8ff2-0aaec9024637 |Method=GET |RequestURI=/v2/tour/users/user-profile |User-Agent=PostmanRuntime/7.49.1 |OS=Unknown, More-Info: PostmanRuntime/7.49.1 |RequestBody= |ResponseCode=200 |ResponseBody={"data":[{"avatarUrl":"https://imgr.com/jlanister","id":"2609465955","phone":"+254720000010"},{"avatarUrl":"https://imgr.com/avatar1","id":"2609577062","phone":"+254720000001"}],"message":"User profile found","responseId":"28ba0845-4461-423f-95dd-d3056de7ed42","status":200,"timestamp":"07-09-2026 20:15:48"} |TimeTaken(ms)=1946 |SourceIP=0:0:0:0:0:0:0:1 |RemotePort=58562 |ServerName=localhost |RemoteHost=0:0:0:0:0:0:0:1
+2026-09-07T20:15:54.983+03:00  INFO 51600 --- [tour-profile-service] [http-nio-9195-exec-7] c.k.t.logging.LoggingFilter              : REQUEST::|logId=bcfd6cfe-ab17-4877-b0fd-c71ad832cb4f |Method=GET |RequestURI=/v2/tour/users/user-profile/jlanister@gmail.com |User-Agent=PostmanRuntime/7.49.1 |OS=Unknown, More-Info: PostmanRuntime/7.49.1 |RequestBody= |ResponseCode=200 |ResponseBody={"data":{"avatarUrl":"https://imgr.com/jlanister","id":"2609465955","phone":"+254720000010"},"message":"User profile  found","responseId":"df90068b-18e5-44b6-8ba2-44dd76eb713c","status":200,"timestamp":"07-09-2026 20:15:54"} |TimeTaken(ms)=316 |SourceIP=0:0:0:0:0:0:0:1 |RemotePort=58562 |ServerName=localhost |RemoteHost=0:0:0:0:0:0:0:1
+2026-09-07T20:17:08.836+03:00  INFO 51600 --- [tour-profile-service] [http-nio-9195-exec-10] c.k.t.logging.LoggingFilter              : REQUEST::|logId=aaaf6d01-000d-4e98-86fb-4284a3b21439 |Method=DELETE |RequestURI=/v2/tour/users/user-profile/jlanister@gmail.com |User-Agent=PostmanRuntime/7.49.1 |OS=Unknown, More-Info: PostmanRuntime/7.49.1 |RequestBody= |ResponseCode=204 |ResponseBody={"data":null,"message":"User profile deleted successfully","responseId":"178d1151-c89e-45c5-acb9-2eadd362ce05","status":204,"timestamp":"07-09-2026 20:17:08"} |TimeTaken(ms)=1248 |SourceIP=0:0:0:0:0:0:0:1 |RemotePort=48764 |ServerName=localhost |RemoteHost=0:0:0:0:0:0:0:1
+2026-09-07T20:17:15.521+03:00  INFO 51600 --- [tour-profile-service] [http-nio-9195-exec-2] c.k.t.logging.LoggingFilter              : REQUEST::|logId=1906c3d7-909a-480d-868c-f2a0181a2f50 |Method=GET |RequestURI=/v2/tour/users/user-profile |User-Agent=PostmanRuntime/7.49.1 |OS=Unknown, More-Info: PostmanRuntime/7.49.1 |RequestBody= |ResponseCode=200 |ResponseBody={"data":[{"avatarUrl":"https://imgr.com/avatar1","id":"2609577062","phone":"+254720000001"}],"message":"User profile found","responseId":"fc8e85d6-b0c2-49a0-948b-e19f63ddb9bc","status":200,"timestamp":"07-09-2026 20:17:15"} |TimeTaken(ms)=1707 |SourceIP=0:0:0:0:0:0:0:1 |RemotePort=48764 |ServerName=localhost |RemoteHost=0:0:0:0:0:0:0:1
