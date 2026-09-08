@@ -47,7 +47,7 @@ public class UserProfileController {
     public ResponseEntity<Object> listUserProfiles(){
         List<Profile> userProfiles = userProfileService.listUsersProfile();
         List<ProfileResponse> userProfileResponses =userProfiles.stream().map(ProfileResponse::from).toList();
-        return ResponseHandler.generateResponse(UUID.randomUUID(),"User profile found",HttpStatus.OK,userProfileResponses,TimestampUtil.now());
+        return ResponseHandler.generateResponse(UUID.randomUUID(),"User profiles found",HttpStatus.OK,userProfileResponses,TimestampUtil.now());
     }
 
     @PutMapping("/users/user-profile/{email}")
